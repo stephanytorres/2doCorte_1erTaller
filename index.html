@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Agregar título a la página -->
+        <title>Landing Page - 1er corte</title>
+        <meta title="Landing Page - 1er corte">
+
+        <!-- Codificación de Caracteres del Texto -->
+        <meta charset="utf-8">
+
+        <!-- Agregar ícono de favoritos -->
+        <link rel="icon" href="img/favicon.png">
+        
+        <!-- Meta que permite la correcta visualización en Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Cargar librerías de Íconos Web > Font Awesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <!-- Cargar PrefixFree  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+        <!-- Cargar Tipógrafía Web > Google Fonts  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- Enlazar a archivo externo CSS > estilo.css -->
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body>
+        <!-- Componente Menú Responsive -->
+        <aside id="menu-moviles">
+            <a href="#" id="abrir-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <a href="#" id="cerrar-menu">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <nav>
+                <a href="#zona-slider">01</a>
+                <a href="#seccion-02">02</a>
+                <a href="#seccion-03">03</a>
+            </nav>
+        </aside>
+
+        <!-- Componente header con Logo y Menú -->
+        <header>
+            <article>
+                <figure>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Landing Page - 1er corte">
+                    </a>
+                </figure>
+            </article>
+        </header>
+
+        <main>
+          <!--   Componente de Slide > Slick Slider -->
+            <section id="zona-slider">
+                <article class="slick-slider">
+                    <figure id="slide-01"></figure>
+                    <figure id="slide-02"></figure>
+                    <figure id="slide-03"></figure>
+                </article>
+            </section>
+
+            <!--   Sección 01 -->
+            <section id="seccion-01">
+                <figure id="img-01"></figure>
+                <figure id="img-02"></figure>
+                <figure id="img-03"></figure>
+                <figure id="img-04"></figure>
+            </section>
+
+            <!--   Sección 02 -->
+            <section id="seccion-02">
+                <article>
+                    <figure id="img-centro-01"></figure>
+                    <figure id="img-centro-02"></figure>
+                    <figure id="img-centro-03"></figure>
+                    <figure id="img-centro-04"></figure>
+                    <figure id="img-centro-05"></figure>
+                    <figure id="img-centro-06"></figure>
+                </article>
+            </section>
+
+            <!--   Sección 03 -->
+            <section id="seccion-03">
+                <figure id="columna-1">
+                    <figure id="img-abajo-01"></figure>
+                    <figure id="img-abajo-02"></figure>
+                    <figure id="img-abajo-03"></figure>
+                    <figure id="img-abajo-04"></figure>
+                </figure>
+
+                <figure id="columna-2">
+                    <figure id="img-abajo-05"></figure>
+                    <figure id="img-abajo-06"></figure>
+                    <figure id="img-abajo-07"></figure>
+                    <figure id="img-abajo-08"></figure>
+                </figure>
+            </section>
+
+        </main>
+
+
+        <!-- Zona de Scripts -->
+        <!-- 1°: LLamado a jQuery desde un CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- 2°: Llamado a librerías hijo de jQuery -->
+        <!-- jQuery Easing desde CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+       <!--  Llamado a Slick Slider -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <!-- Enlazar a archivo externo JS > script.js -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,148 @@
+/* PATRONES GLOBALES DE CSS  */
+
+/* Tipografía principal */
+h1, h2, h3, a, button { font-family: 'Montserrat', sans-serif; }
+
+/* Tipografía secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { font-family: 'Poppins', sans-serif; }
+
+/* Asignación de propiedad display: block; a etiquetas de estructura */
+header, main, section, footer, aside, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen por defecto varias etiquetas de HTML5 */
+body, h1, h2, h3, h4, h5, h6, p, figure, img { margin: 0; overflow-x: hidden; }
+
+
+/* CSS Propio */
+
+/* Componente Menú Responsive */
+aside#menu-moviles { width: 290px; height: 100%; display: block; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background: #ffffff; }
+
+aside#menu-moviles a#abrir-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: block; text-decoration: none; color: #220a5d; background: #f3114d00; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-moviles a#abrir-menu:hover { background: #220a5d00; transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#cerrar-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: none; text-decoration: none; color: #220a5d; background: #f3114d00; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-moviles a#cerrar-menu:hover { background: #220a5d00; transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { width: 60%; height: auto; margin: 15% auto; float: none; position: relative; }
+aside#menu-moviles nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #220a5d; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-moviles nav a:hover { color: #f3114d00; transition: all 0.3s ease-in; }
+
+
+/* Componente header con Logo y Menú */
+header { width: 100%; height: 100px; margin: 0; float: none; position: fixed; left: 0; top: 0; z-index: 99990; background: #ffffffad; }
+header article { width: 1100px; height: 80px; margin: 0 auto; float: none; position: relative; }
+
+header article figure { width: 1200px; height: 60px; margin: 0; float: left; position: relative; top: 10px; }
+header article figure a { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+header article figure a img { width: auto; height: 60px; margin: 0 auto; float: none; position: relative; display: block; }
+
+
+/* Caja Main */
+main { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+
+
+
+/* Slick Slider */
+main section#zona-slider { width: 100%; height: 100vh; margin: 0 auto; float: none; position: relative; }
+main section#zona-slider article.slick-slider { width: 100%; height: 100vh; margin: 0 auto; float: none; position: relative; }
+main section#zona-slider article.slick-slider figure#slide-01 { width: 100%; height: 100vh; margin: 0; float: left; position: relative; background: url('https://images.unsplash.com/photo-1580202313710-1b1bb375fcda?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1358&q=80') no-repeat top center; background-size: cover; }
+main section#zona-slider article.slick-slider figure#slide-02 { width: 100%; height: 100vh; margin: 0; float: left; position: relative; background: url('https://images.unsplash.com/photo-1580202313707-46a966af5c6f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1343&q=80') no-repeat top center; background-size: cover; }
+main section#zona-slider article.slick-slider figure#slide-03 { width: 100%; height: 100vh; margin: 0; float: left; position: relative; background: url('https://images.unsplash.com/photo-1580202313712-809cde1952c9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1338&q=80') no-repeat bottom center; background-size: cover; }
+
+.slick-prev { left: 25px !important; z-index: 9 !important; }
+.slick-next { right: 25px !important; z-index: 10 !important; }
+
+
+
+/* Seccion 1 */
+main section#seccion-01 { width: 100%; height: 600px; margin: 0 auto; float: none; position: relative; }
+main section#seccion-01 figure#img-01 { width: 50%; height: 600px; margin: 0; float: left; position: relative; background: url('https://images.unsplash.com/photo-1580202313722-bfe949aec7ab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1382&q=80') no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#img-02 { width: 50%; height: 300px; margin: 0; float: left; position: relative; background: url('https://images.unsplash.com/photo-1580202313730-ada608c2e4a2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1389&q=80') no-repeat bottom center; background-size: cover; } 
+main section#seccion-01 figure#img-03 {  width: 20%; height: 300px; margin: 0; float: left; position: relative; background: url('https://i.pinimg.com/originals/25/7f/ae/257faefe7ddf356900c67ec4cfdea92c.jpg') no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#img-04 {  width: 30%; height: 300px; margin: 0; float: left; position: relative; background: url('https://images.unsplash.com/photo-1580202313697-1d0e3df0a95f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1389&q=80') no-repeat bottom center; background-size: cover; }
+
+
+
+/* Seccion 2 */
+main section#seccion-02 { width: 100%; height: 900px; margin: 0 auto; float: none; position: relative; }
+main section#seccion-02 article { width: 70%; float: left; position: relative; padding: 75px 20% 75px 23%; }
+main section#seccion-02 article figure#img-centro-01 { width: 350px; height: 350px; margin: 1%; float: left; position: relative; background: url('https://data.whicdn.com/images/343913160/original.jpg') no-repeat bottom center; background-size: cover; }
+main section#seccion-02 article figure#img-centro-02 { width: 350px; height: 350px; margin: 1%; float: left; position: relative; background: url('https://data.whicdn.com/images/345257944/original.jpg') no-repeat bottom center; background-size: cover; } 
+main section#seccion-02 article figure#img-centro-03 { width: 350px; height: 350px; margin: 1%; float: left; position: relative; background: url('https://i.pinimg.com/originals/95/d1/0c/95d10c7055791c3a7730be02c744d9fc.png') no-repeat bottom center; background-size: cover; }
+main section#seccion-02 article figure#img-centro-04 { width: 350px; height: 350px; margin: 1%; float: left; position: relative; background: url('https://i.pinimg.com/originals/7f/63/47/7f634796f74ea0f4da5b64f9f5bd38cb.jpg') no-repeat bottom center; background-size: cover; }
+main section#seccion-02 article figure#img-centro-05 { width: 350px; height: 350px; margin: 1%; float: left; position: relative; background: url('https://i.pinimg.com/originals/58/48/af/5848afe52e3483e4f3a2b3eab29ae168.jpg') no-repeat bottom center; background-size: cover; }
+main section#seccion-02 article figure#img-centro-06 { width: 350px; height: 350px; margin: 1%; float: left; position: relative; background: url('https://i.pinimg.com/originals/25/2d/1e/252d1e9682c5e4567f2a6138d59b855c.jpg') no-repeat bottom center; background-size: cover; }
+
+
+
+/* Seccion 3 */
+main section#seccion-03 { width: 100%; height: 1400px; margin: 0 auto; float: left; position: relative; }
+main section#seccion-03 figure#columna-1 { width: 50%; height: 1400px; float: left; position: relative; }
+main section#seccion-03 figure#columna-1 figure#img-abajo-01 { width: 100%; height: 350px; margin: 0; float: left; position: relative; background: url('https://images.unsplash.com/photo-1580202313712-6ee61c7ef85a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1371&q=80') no-repeat top center; background-size: cover; }
+main section#seccion-03 figure#columna-1 figure#img-abajo-02 { width: 100%; height: 700px; margin: 0; float: left; position: relative; background: url('https://i.pinimg.com/originals/24/c5/3c/24c53cd48c4f47aaff313b2111d8fe6c.jpg') no-repeat top center; background-size: cover; } 
+main section#seccion-03 figure#columna-1 figure#img-abajo-03 { width: 50%; height: 350px; margin: 0; float: left; position: relative; background: url('https://i.pinimg.com/originals/b2/df/8e/b2df8e0a93dd3e83724bb880c2be8372.jpg') no-repeat top center; background-size: cover; }
+main section#seccion-03 figure#columna-1 figure#img-abajo-04 { width: 50%; height: 350px; margin: 0; float: left; position: relative; background: url('https://images.unsplash.com/photo-1582993813905-da1f9480d4f0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80') no-repeat bottom center; background-size: cover; } 
+
+
+main section#seccion-03 figure#columna-2 { width: 50%; height: 1400px; float: left; position: relative; } 
+main section#seccion-03 figure#columna-2 figure#img-abajo-05 { width: 50%; height: 350px; margin: 0; float: left; position: relative; background: url('https://i.pinimg.com/originals/70/c9/e9/70c9e919374e1e506636b040d13b4822.png') no-repeat bottom center; background-size: cover; }
+main section#seccion-03 figure#columna-2 figure#img-abajo-06 { width: 50%; height: 350px; margin: 0; float: left; position: relative; background: url('https://i.pinimg.com/originals/b5/4d/06/b54d068c6a57bcca859dbbce55170e03.jpg') no-repeat top center; background-size: cover; }
+main section#seccion-03 figure#columna-2 figure#img-abajo-07 { width: 100%; height: 350px; margin: 0; float: left; position: relative; background: url('https://images.unsplash.com/photo-1582993573720-7464d9cd1425?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80') no-repeat bottom center; background-size: cover; }
+main section#seccion-03 figure#columna-2 figure#img-abajo-08 { width: 100%; height: 700px; margin: 0; float: left; position: relative; background: url('https://64.media.tumblr.com/068092b1c25ee2c13499c4aa391971b2/tumblr_puscjet95Z1w7nqg1o1_1280.jpg') no-repeat bottom center; background-size: cover; }
+
+
+
+/* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 90%; }
+    header article figure { width: 40%; float: none; }
+
+
+    aside#menu-moviles { display: block; }
+
+    main section#zona-slider { height: 50vh; }
+    main section#zona-slider article.slick-slider { height: 50vh; }
+    main section#zona-slider article.slick-slider figure#slide-01 { height: 50vh; }
+    main section#zona-slider article.slick-slider figure#slide-02 { height: 50vh; }
+    main section#zona-slider article.slick-slider figure#slide-03 { height: 50vh; }
+
+
+    main section#seccion-01 { width: 100%; height: auto; }
+    main section#seccion-01 figure#img-01,
+    main section#seccion-01 figure#img-02,
+    main section#seccion-01 figure#img-03,
+    main section#seccion-01 figure#img-04 { width: 50%; height: 250px; float: left; }
+
+
+    main section#seccion-03 { width: 100%; height: auto; }
+    main section#seccion-03 figure#columna-1 { width: 100%; height: auto; }
+    main section#seccion-03 figure#columna-1 figure#img-abajo-01 { width: 100%; height: 500px; float: left; }
+    main section#seccion-03 figure#columna-1 figure#img-abajo-02 { width: 50%; height: 250px; float: left; } 
+    main section#seccion-03 figure#columna-1 figure#img-abajo-03 { width: 50%; height: 250px; float: left; } 
+    main section#seccion-03 figure#columna-1 figure#img-abajo-04 { width: 50%; height: 250px; float: left; } 
+
+
+    main section#seccion-03 figure#columna-2 { width: 100%; height: auto; }
+    main section#seccion-03 figure#columna-2 figure#img-abajo-05 { width: 50%; height: 250px; float: left; } 
+    main section#seccion-03 figure#columna-2 figure#img-abajo-06 { width: 50%; height: 250px; float: left; } 
+    main section#seccion-03 figure#columna-2 figure#img-abajo-07 { width: 50%; height: 250px; float: left; } 
+    main section#seccion-03 figure#columna-2 figure#img-abajo-08 { width: 100%; height: 500px; float: left; }
+
+
+}
+
+@media only screen and (max-width: 799px){
+    
+}
+
+/* Ajustes para Móviles */
+@media only screen and (max-width: 499px){
+    header article figure { margin: 0; float: left; }
+}
+
+@media only screen and (max-width: 399px){
+    
+}
